@@ -16,5 +16,6 @@ export const useFetcher = () => useContext(FetcherContext);
  * 每次执行函数时内部的状态变量都会是最新值
  */
 export function useFetcherCreater() {
+    console.log('hello?');
     return useCallback((config?: FetcherConfig) => createRequest(config), []);
 }
