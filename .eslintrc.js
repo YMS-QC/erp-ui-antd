@@ -39,7 +39,6 @@ module.exports = {
     // 使用prettier格式化代码
     // https://github.com/prettier/eslint-config-prettier#readme
     "prettier",
-
     // 整合typescript-eslint与prettier
     // https://github.com/prettier/eslint-plugin-prettier
     "plugin:prettier/recommended",
@@ -75,9 +74,9 @@ module.exports = {
       1,
       {
         devDependencies: [
-          "scripts/**/*.{ts,js}",
-          "**/*.test.{ts,js,tsx}",
-          "**/*.spec.{ts,js,tsx}",
+          "resources/scripts/**/*.{ts,js}",
+          "resources/**/*.test.{ts,js,tsx}",
+          "resources/**/*.spec.{ts,js,tsx}",
           "**.{ts,js}",
         ],
       },
@@ -171,12 +170,6 @@ module.exports = {
         required: {
           some: ["nesting", "id"],
         },
-      },
-    ],
-    "prettier/prettier": [
-      "error",
-      {
-        endOfLine: "auto",
       },
     ],
   },

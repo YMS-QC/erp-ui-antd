@@ -1,3 +1,4 @@
-import { resolve } from "path";
+// scripts/utils.ts
+import { resolve } from 'path';
 
-export const pathResolve = (dir: string) => resolve(__dirname, "../", dir);
+export const pathResolve = (dir: string) => resolve(__dirname, '../', dir);
